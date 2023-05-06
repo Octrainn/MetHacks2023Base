@@ -1,41 +1,5 @@
 ---
 ---
-<script>
-	import { animate } from "motion"
-
-    console.log('hello');
-    window.onload = (e) => {
-        console.log('loaded!');
-
-		animate(
-    //element for anim via class name from DOM
-    ".homeTitle", 
-    //properties to animate
-    { opacity:100},
-
-    //further props for the animation based on the standard keyframing and easing tech
-    {duration: 1,easing:"ease-out",delay: 0.6}
-)
-
-animate(
-    //element for anim via class name from DOM
-    ".subHeader", 
-    //properties to animate
-    { opacity:100},
-
-    //further props for the animation based on the standard keyframing and easing tech
-    {duration: 1,easing:"ease-out",delay: 0.8}
-).finished.then(() =>{
-
-	
-//redirect here
-})
-
-
-    };
-
-
-</script>
 
 <html lang="en">
 	<head>
@@ -45,15 +9,10 @@ animate(
 		<meta name="generator" content={Astro.generator} />
 		<link rel="stylesheet" href="/styles/index.css" />
 
-		<title>Astro</title>
+		<title>MetHacks 2023</title>
 	</head>
 	<body>
 
-		<div class="container">
-		<h1 class="homeTitle">MetHacks 2023</h1>
-		<h2 class="subHeader">@HNow @Octrainn @TahaBRaheel</h2>
-
-	</div>
 
 
 	</body>
