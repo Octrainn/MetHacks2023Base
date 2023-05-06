@@ -1,0 +1,29 @@
+.homeTitle{
+margin: 0px;
+padding: 0px;
+font-size: 12rem;
+color: wheat;
+opacity: 0%;
+}
+
+.subHeader{
+  
+    font-size: 2rem;
+    color: wheat;
+    opacity: 0%;
+}
+
+.container{
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+body{
+
+    background-color: #212121;
+
+}
