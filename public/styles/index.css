@@ -30,7 +30,7 @@ body {
   width: 900px;
   border-radius: 20px;
   background-color: var(--silver-color);
-  opacity: 0.75;
+  opacity: 0;
   z-index: 1;
   position: absolute;
   box-shadow: 5px 10px 5px 0 rgba(0, 0, 0, 0.8);
@@ -86,4 +86,8 @@ h1 {
 h1 span {
   position: relative;
   display: block;
+}
+
+.pName{
+  opacity: 0;
 }

@@ -11,7 +11,7 @@
 
 		animate(
     //element for anim via class name from DOM
-    ".homeTitle", 
+    ".pName", 
     //properties to animate
     { opacity:100},
 
@@ -21,18 +21,23 @@
 
 animate(
     //element for anim via class name from DOM
-    ".subHeader", 
+    ".silver-box",
     //properties to animate
-    { opacity:100},
+    { opacity:0.75},
 
     //further props for the animation based on the standard keyframing and easing tech
-    {duration: 1,easing:"ease-out",delay: 0.8}
+    {duration: 1,easing:"ease-out",delay: 1.5}
 )
 
 
     };
 
+ 
+</script>
 
+<script>
+
+import  "../scripts/indexAnim.js"
 </script>
 
 <html lang="en">
@@ -43,6 +48,7 @@ animate(
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<link rel="stylesheet" href="/styles/index.css" />
+
       
 
     
@@ -65,13 +71,13 @@ animate(
             
         </div>
             
-            <div class="silver-box">
+            <div class="silver-box" id="silver-box">
             <div class="text">
             <h3>Sharpen your software debugging and optimization skills with the help of <span>AI</span></h3>
             <p>Improve your coding ability by taking on coding challenges that involve finding and fixing critical errors in AI generated solutions to interview level programming questions! </p>
-             <a href=/pageTwo target="_blank">
-                  <button>Get Started</button>
-             </a>
+             
+                  <button id="redirectButton" >Get Started</button>
+            
            
              </div>
            
