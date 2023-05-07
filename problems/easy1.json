@@ -1,0 +1,33 @@
+{
+    "problem": "Given a string s, return true if s is a palindrome, otherwise return false. Palindrome is a word, phrase, number, or other sequence of characters that reads the same backward as forward. For example, 'racecar' and 'level' are palindromes.",
+    "examples": [
+      {
+        "Input": "s = 'A man, a plan, a canal: Panama'",
+        "Output": true,
+        "Explanation": "amanaplanacanalpanama is a palindrome"
+      },
+  
+      {
+        "Input": "s = 'race a car'",
+        "Output": false,
+        "Explanation": "raceacar is not a palindrome."
+      }
+    ],
+    "solution": "class Solution:\n    def isPalindrome(s):\n    s = s.lower()\n    i, j = 0, len(s) - 1\n    while i < j:\n        while i < j and not s[i].isalnum():\n            i += 1\n        while i < j and not s[j].isalnum():\n            j -= 1\n        if s[i] != s[j]:\n            return False\n        i += 1\n        j -= 1\n    return True",
+    "incorrect_solution": "class Solution:\n    def isPalindrome(s):\n    n = len(s)\n    for i in range(n // 2):\n        if s[i] != s[n - 1 - i]:\n            return False\n    return True",
+    "test_cases": [
+      {
+        "input": "A man, a plan, a canal: Panama",
+        "output": true
+      },
+      {
+        "input": "race a car",
+        "output": false
+      },
+      {
+        "input": "Was it a car or a cat I saw?",
+        "output": true
+      }
+    ]
+  }
+  
