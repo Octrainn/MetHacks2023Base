@@ -83,7 +83,7 @@ nav ul li a:hover {
   align-items: center;
   text-align: center;
   border-radius: 20px;
-  box-shadow: 5px 10px 5px 0 rgba(0, 0, 0, 0.8);
+  box-shadow: 3px 6px 5px 0 rgba(179, 229, 252, 0.3);
   line-height: 1.6;
   margin-top: 50px;
 }
@@ -126,24 +126,27 @@ nav ul li a:hover {
   padding: 10px;
   text-align: center;
   border-radius: 20px;
-  box-shadow: 5px 10px 5px 0 rgba(0, 0, 0, 0.8);
+  
 }
 
 .levels .difficulty h2:nth-child(1) {
   background-color: #a5d6a7;
+  box-shadow: 5px 10px 5px 0 rgba(128, 179, 131, 0.3);
 }
 
 .levels .difficulty h2:nth-child(2) {
-  background-color: #fff59d;
+  background-color: #ffee57;
+  box-shadow: 5px 10px 5px 0 rgba(135, 126, 46,0.3);
 }
 
 .levels .difficulty h2:nth-child(3) {
-  background-color: orange;
+  background-color: rgb(207, 46, 46);
+  box-shadow: 5px 10px 5px 0 rgba(207, 46, 46,0.3);
 }
 
 .levels .difficulty h2:nth-child(4) {
   background-color: pink;
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 .difficulty h2 span {
