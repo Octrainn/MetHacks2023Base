@@ -1,28 +1,67 @@
-.homeTitle{
-margin: 0px;
-padding: 0px;
-font-size: 12rem;
-color: wheat;
-opacity: 0%;
+:root {
+  --silver-color: #d8d8d8;
+}
+* {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.subHeader{
-  
-    font-size: 2rem;
-    color: wheat;
-    opacity: 0%;
+body {
+  background: url(milad-fakurian-nY14Fs8pxT8-unsplash.jpg) no-repeat center
+    fixed;
+
+  background-size: cover;
+  position: relative;
+  overflow-y: hidden;
+
+  background-color: rgba(33, 33, 33, 0.75);
 }
 
-.container{
-
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.silver-box {
+  border: 2px solid var(--silver-color);
+  height: 650px;
+  width: 900px;
+  border-radius: 20px;
+  background-color: var(--silver-color);
+  opacity: 0.75;
+  z-index: 1;
+  position: absolute;
+  box-shadow: 5px 10px 5px 0 rgba(0, 0, 0, 0.8);
+  top: 3%;
+  right: 10%;
+}
+.text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 90%;
+  gap: 10px;
+  text-align: center;
+  left: 4%;
 }
 
-body{
+.text span {
+  color: lime;
+  opacity: 0.55;
+}
+.text h3 {
+  font-size: 3rem;
+}
+.text p {
+  font-size: 2rem;
+  color: black;
+  font-weight: bold;
+}
 
 button {
   border-radius: 30px;
