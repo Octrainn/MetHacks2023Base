@@ -1,0 +1,112 @@
+* {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+}
+
+body {
+  background-color: #212121;
+  overflow: hidden;
+}
+.Lines {
+  position: relative;
+}
+
+.horizontal-line {
+  position: absolute;
+  top: 60px;
+  left: 30vw;
+  border-top: 5px solid white;
+  width: 1600px;
+}
+
+.vertical-line {
+  position: absolute;
+  left: 30%;
+  border-left: 5px solid white;
+  height: 5000px;
+}
+
+h1 {
+  color: white;
+}
+
+.above h2 {
+  position: absolute;
+  color: white;
+  top: 2vh;
+  right: 60%;
+}
+
+.editor-container {
+  position: relative;
+  left: 30.5vw;
+  top: 28px;
+  z-index: -1;
+}
+
+#editor {
+  width: 100%;
+  height: 100vh;
+  outline: none;
+  font-size: 1rem;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  overflow-y: scroll;
+}
+
+.Lines .cases {
+  position: absolute;
+  top: 50%;
+  color: white;
+}
+#timer {
+  position: absolute;
+  right: 5vw;
+  top: 1vh;
+  color: white;
+  font-size: 2rem;
+}
+
+.ion-button {
+  border: none;
+  background-color: transparent;
+  padding: 5px 10px;
+  position: absolute;
+  left: 60vw;
+  bottom: 99vh;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+}
+
+.ion-button ion-icon {
+  font-size: 2.5rem;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.ion-button:hover ion-icon {
+  color: gray;
+}
+
+.ion-button:hover span {
+  color: gray;
+}
+
+.ion-button span {
+  color: white;
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.ion-button:hover {
+  transition: all 0.2s ease-in-out;
+  color: black;
+}

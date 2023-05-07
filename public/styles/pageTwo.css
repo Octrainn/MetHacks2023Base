@@ -88,7 +88,6 @@ nav ul li a:hover {
   margin-top: 50px;
 }
 .stat-sect {
-
   background-color: #d1c4e9;
 }
 
@@ -128,7 +127,16 @@ nav ul li a:hover {
   border-radius: 20px;
   
 }
+.levels .difficulty h2 span a {
+  outline: none;
+  text-decoration: none;
+  color: black;
+  transition: color 0.2s ease-in-out;
+}
 
+.levels .difficulty h2 span a:hover {
+  color: gray;
+}
 .levels .difficulty h2:nth-child(1) {
   background-color: #a5d6a7;
   box-shadow: 5px 10px 5px 0 rgba(128, 179, 131, 0.3);
@@ -154,4 +162,3 @@ nav ul li a:hover {
   padding: 5px;
   font-size: 1.8rem;
 }
-
