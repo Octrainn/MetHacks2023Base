@@ -1,0 +1,62 @@
+{
+    "problem": "Given a string s, find the length of the longest substring without repeating characters.",
+    
+    "examples": [
+        {
+            "input": "abcabcbb",
+            "output": 3,
+            "explanation": "The longest substring without repeating characters is 'abc'."
+          },
+          {
+            "input": "aaaaaa",
+            "output": 1,
+            "explanation": "All characters are the same, so the longest substring without repeating characters is simply the first character 'a'."
+          }
+    ],
+
+    "solution": "class Solution:\n    def lengthOfLongestSubstring(s: str) -> int:\n    n = len(s)\n    if n == 0:\n        return 0\n    max_len = 1\n    start = 0\n    seen = {}\n    for i in range(n):\n        if s[i] in seen and seen[s[i]] >= start:\n            start = seen[s[i]] + 1\n        seen[s[i]] = i\n        max_len = max(max_len, i - start + 1)\n    return max_len\n",
+    "incorrect_solution": "def lengthOfLongestSubstring(s: str) -> int:\n    n = len(s)\n    if n == 0:\n        return 0\n    max_len = 1\n    start = 0\n    for i in range(n):\n        if s[i] in s[start:i]:\n            start = s.index(s[i], start, i) + 1\n        max_len = max(max_len, i - start + 1)\n    return max_len\n",
+
+    "test_cases": [
+      {
+        "input": "abcabcbb",
+        "output": 3,
+        "explanation": "The longest substring without repeating characters is 'abc'."
+      },
+      {
+        "input": "aaaaaa",
+        "output": 1,
+        "explanation": "All characters are the same, so the longest substring without repeating characters is simply the first character 'a'."
+      },
+      {
+        "input": "",
+        "output": 0,
+        "explanation": "There are no characters in the string, so the longest substring without repeating characters is an empty string."
+      },
+      {
+        "input": "qwertyuiop",
+        "output": 10,
+        "explanation": "All characters are unique, so the longest substring without repeating characters is the entire string."
+      },
+      {
+        "input": "pwwkew",
+        "output": 3,
+        "explanation": "The longest substring without repeating characters is 'wke'."
+      },
+      {
+        "input": "bbbbbcddefgbbbb",
+        "output": 6,
+        "explanation": "The longest substring without repeating characters is 'cdefg'."
+      },
+      {
+        "input": "abacadaeafag",
+        "output": 4,
+        "explanation": "The longest substring without repeating characters is 'acde'."
+      }
+    ],
+    "correct_solution": {
+      "language": "python",
+      "solution": "def lengthOfLongestSubstring(s: str) -> int:\n    n = len(s)\n    if n == 0:\n        return 0\n    max_len = 1\n    start = 0\n    seen = {}\n    for i in range(n):\n        if s[i] in seen and seen[s[i]] >= start:\n            start = seen[s[i]] + 1\n        seen[s[i]] = i\n        max_len = max(max_len, i - start + 1)\n    return max_len\n"
+    }
+  }
+  
