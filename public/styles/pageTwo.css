@@ -126,17 +126,13 @@ nav ul li a:hover {
   text-align: center;
   border-radius: 20px;
   box-shadow: 5px 10px 5px 0 rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
 }
-.levels .difficulty h2 span a {
-  outline: none;
-  text-decoration: none;
-  color: black;
-  transition: color 0.2s ease-in-out;
+.levels .difficulty h2:hover {
+  transform: scale(1.05);
 }
 
-.levels .difficulty h2 span a:hover {
-  color: gray;
-}
 .levels .difficulty h2:nth-child(1) {
   background-color: #a5d6a7;
 }
