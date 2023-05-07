@@ -63,9 +63,49 @@ body {
   font-weight: bold;
 }
 
+.silver-box {
+  border: 2px solid var(--silver-color);
+  height: 650px;
+  width: 900px;
+  border-radius: 20px;
+  background-color: var(--silver-color);
+  opacity: 0;
+  z-index: 1;
+  position: absolute;
+  box-shadow: 5px 10px 5px 0 rgba(0, 0, 0, 0.8);
+  top: 15%;
+  right: 10%;
+}
+.text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 90%;
+  gap: 10px;
+  text-align: center;
+  left: 4%;
+}
+
+.text span {
+  color: #18dd1f;
+
+  opacity: 0.55;
+}
+.text h3 {
+  font-size: 3rem;
+}
+.text p {
+  font-size: 2rem;
+  color: black;
+  font-weight: bold;
+}
+
 button {
   border-radius: 30px;
-  background-color: #c8e6c9;
+  background-color: #5ed863;
   padding: 20px;
   cursor: pointer;
   font-size: 1.75rem;
@@ -75,7 +115,7 @@ button {
   width: 350px;
 }
 h1 {
-  font-size: 6rem;
+  font-size: 13rem;
   color: #b6b1c1;
   margin-right: 70rem;
 
@@ -84,4 +124,8 @@ h1 {
 h1 span {
   position: relative;
   display: block;
+}
+
+.pName {
+  opacity: 0;
 }
