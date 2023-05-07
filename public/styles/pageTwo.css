@@ -62,8 +62,8 @@ nav ul li a:hover {
 
 .challenge-stats {
   position: relative;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   left: 10%;
   top: 20%;
   font-size: 1.3rem;
@@ -85,8 +85,10 @@ nav ul li a:hover {
   border-radius: 20px;
   box-shadow: 5px 10px 5px 0 rgba(0, 0, 0, 0.8);
   line-height: 1.6;
+  margin-top: 50px;
 }
 .stat-sect {
+
   background-color: #d1c4e9;
 }
 
@@ -102,12 +104,12 @@ nav ul li a:hover {
   color: white;
   position: relative;
   left: 35%;
-  bottom: 500px;
+  bottom: 565px;
 }
 .levels h1 {
   font-size: 2.5rem;
   position: relative;
-  top: -50px;
+  top: -20px;
 }
 
 .levels .difficulty {
@@ -141,9 +143,12 @@ nav ul li a:hover {
 
 .levels .difficulty h2:nth-child(4) {
   background-color: pink;
+  opacity: 0.3;
 }
+
 .difficulty h2 span {
   display: block;
   padding: 5px;
   font-size: 1.8rem;
 }
+
